@@ -126,8 +126,14 @@ directives.directive('scene3d', function ($log, $timeout, $rootScope) {
 
     function makeCamera(attr){
         var camera = new THREE.PerspectiveCamera(attr.fov, attr.width / attr.height, attr.near, attr.far);
-        camera.position.z = attr.z;
 
+        camera.position.x = attr.posX;
+        camera.position.y = attr.posY;
+        camera.position.z = attr.posZ;
+
+        camera.rotation.x = attr.rotX;
+        camera.rotation.y = attr.rotY;
+        camera.rotation.z = attr.rotZ;
 
         return camera;
     }

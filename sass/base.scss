@@ -16,7 +16,17 @@ $page-bg: #2A2D34;
 
 
 html, body{
-  background-color: $page-bg;
+  //background-color: $page-bg;
+
+  background: #2a2d34; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #2a2d34 0%, #1f2126 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#2a2d34), color-stop(100%,#1f2126)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #2a2d34 0%,#1f2126 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #2a2d34 0%,#1f2126 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #2a2d34 0%,#1f2126 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #2a2d34 0%,#1f2126 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a2d34', endColorstr='#1f2126',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
   height: 100%;
 }
 
