@@ -16,11 +16,12 @@ controllers.controller('MainContentCtrl', function ($scope, $rootScope, $timeout
         if(to.url === '/sale/:type'){
             $log.info('Sale:ACTIVE');
             MainModel.activeView = 'SALE';
-            //$scope.transform(Scene3DApi.setDepthPosition(OBJ3D.SALE, 0), 1500);
         }else if(to.url === '/product/:uri'){
             MainModel.activeView = 'PRODUCT';
         }else if(to.url === '/item/:id'){
             MainModel.activeView = 'ITEM';
+        }else if(to.url === '/'){
+            MainModel.activeView = 'HOME';
         }
     });
 });
@@ -45,6 +46,15 @@ controllers.controller('WelcomeCtrl', function ($scope, MainModel, $log, $http, 
 
     MainModel.breadcrumbs(MainModel.root);
 
+    $scope.$on('$stateChangeSuccess', function(e, to, from){
+        $log.info('$stateChangeSuccess', 'HOME');
+        if(MainModel.activeView === 'HOME'){
+
+            $scope.transform(Scene3DApi.setDepthPosition(homeObj3Ds, 0), 1500);
+        }
+    });
+
+
     $scope.$on('addObj3D', function(e,obj3D){
         //$log.info('addObj3D', 'HOME')
         e.stopPropagation();
@@ -55,7 +65,7 @@ controllers.controller('WelcomeCtrl', function ($scope, MainModel, $log, $http, 
         //$log.info('render3dComplete', 'HOME');
         e.stopPropagation();
         $scope.setInitPosition(Scene3DApi.getFlyOutLayout(homeObj3Ds,$scope.getCamera()));
-        $scope.transform(Scene3DApi.getProductLayout(homeObj3Ds,$scope.getCamera()), 1500);
+        $scope.transform(Scene3DApi.getProductLayout(homeObj3Ds,0), 1500);
     })
 
 
@@ -70,6 +80,8 @@ controllers.controller('SalesCtrl', function ($scope, MainModel, $log, promiseDa
     $scope.data = promiseData.data;
     $scope.item = promiseData.item;
 
+    MainModel.breadcrumbs(MainModel.root + ' sales');
+
     $scope.$on('$stateChangeSuccess', function(e, to, from){
         $log.info('$stateChangeSuccess', 'PRODUCT');
         if(MainModel.activeView === 'SALE'){
@@ -81,8 +93,6 @@ controllers.controller('SalesCtrl', function ($scope, MainModel, $log, promiseDa
     $scope.isFar = function(){
         return (MainModel.activeView === 'SALE')? false:true;
     }
-
-    MainModel.breadcrumbs(MainModel.root + ' sales');
 
     $scope.$on('Sale:onEnter', function(){
         $log.info('Sale:onEnter');

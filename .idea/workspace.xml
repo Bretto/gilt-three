@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1abb8998-efb5-46d7-9953-f13f86069ccc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers.js" afterPath="$PROJECT_DIR$/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/directives.js" afterPath="$PROJECT_DIR$/js/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/services.js" afterPath="$PROJECT_DIR$/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/three/TrackballControls.js" afterPath="$PROJECT_DIR$/libs/three/TrackballControls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partial/products.html" afterPath="$PROJECT_DIR$/partial/products.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partial/sales.html" afterPath="$PROJECT_DIR$/partial/sales.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/base.scss" afterPath="$PROJECT_DIR$/sass/base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/product.scss" afterPath="$PROJECT_DIR$/sass/product.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/products.scss" afterPath="$PROJECT_DIR$/sass/products.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/screen.scss" afterPath="$PROJECT_DIR$/sass/screen.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/base.css" afterPath="$PROJECT_DIR$/stylesheets/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/product.css" afterPath="$PROJECT_DIR$/stylesheets/product.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/products.css" afterPath="$PROJECT_DIR$/stylesheets/products.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/sales.css" afterPath="$PROJECT_DIR$/stylesheets/sales.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/screen.css" afterPath="$PROJECT_DIR$/stylesheets/screen.css" />
     </list>
     <ignored path="leap-three-navigation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,10 +49,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="7" selection-start="4977" selection-end="4977" vertical-scroll-proportion="0.0">
+            <state line="56" column="0" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.38641685">
               <folding />
             </state>
           </provider>
@@ -92,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="50" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.5690867">
+            <state line="67" column="0" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -155,8 +139,8 @@
         <option value="$PROJECT_DIR$/sass/sales.scss" />
         <option value="$PROJECT_DIR$/sass/products.scss" />
         <option value="$PROJECT_DIR$/partial/products.html" />
-        <option value="$PROJECT_DIR$/js/controllers.js" />
         <option value="$PROJECT_DIR$/sass/base.scss" />
+        <option value="$PROJECT_DIR$/js/controllers.js" />
       </list>
     </option>
   </component>
@@ -467,13 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="7" selection-start="4977" selection-end="4977" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/sales.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="50" selection-start="328" selection-end="452" vertical-scroll-proportion="0.0">
@@ -483,7 +460,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="50" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.5690867">
+        <state line="67" column="0" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.38641685">
           <folding />
         </state>
       </provider>
