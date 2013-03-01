@@ -1,0 +1,22 @@
+/* line 4, ../sass/products.scss */
+#sales #products .item3d {
+  width: 300px;
+  height: 400px;
+}
+/* line 9, ../sass/products.scss */
+#sales #products .element {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  cursor: default;
+}
+/* line 18, ../sass/products.scss */
+#sales #products section img {
+  width: 300px;
+  height: 400px;
+}
+/* line 24, ../sass/products.scss */
+#sales #products section .rows img {
+  width: 91px !important;
+  height: 121px !important;
+}

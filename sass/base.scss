@@ -1,0 +1,103 @@
+@import "compass/css3";
+@import "compass/utilities";
+
+$c1: #D96666;
+$c2: #D98032;
+$c3: #F2A950;
+$c4: #736C48;
+$page-bg: #2A2D34;
+
+
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+html, body{
+  background-color: $page-bg;
+  height: 100%;
+}
+
+img{
+  //opacity: 0;
+  border: null;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+h1{
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.thumbnails{
+  margin-left: -16px;
+}
+
+
+.finger {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-color: #2d6987;
+  border: 1px solid #ffffff;
+  opacity: .5;
+  z-index: 9999;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+
+.h-line{
+  border: solid rgba(255, 0, 0, .5) 1px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+
+.v-line{
+  border: solid rgba(255, 0, 0, .5) 1px;
+  position: absolute;
+  height: 100%;
+  right: 50%;
+  top: 0;
+}
+
+
+#scene-3d{
+  overflow: hidden;
+  margin: auto;
+}
+
+#camera-3d{
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+}
+
+.item3d{
+  position: absolute;
+  list-style: none;
+  -webkit-transition: opacity .3s ease-in-out .3s;
+}
+
+.element {
+  position: absolute;
+  cursor: default;
+}
+
+.sold-out{
+  color: #ff0000;
+  font-size: 52px;
+  -webkit-transform: translate3d(-50%, -50%, 0px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) scale3d(1, -1, 1);
+  transform: translate3d(-50%, -50%, 0px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) scale3d(1, -1, 1);
+  text-align: center;
+  background-color: white;
+  display: inline-block;
+  padding: 20px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}

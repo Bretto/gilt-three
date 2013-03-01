@@ -1,0 +1,198 @@
+#main-nav{
+
+  background-color: $page-bg;
+  z-index: 1030;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 17px;
+
+  .navbar{
+
+    text-align: center;
+
+
+    margin: auto;
+
+    .nav{
+      display: inline-block;
+      margin: auto;
+      float: none;
+    }
+
+
+    hr{
+      margin: 0 20px 10px;
+      border: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.29);
+    }
+  }
+
+
+
+  .navbar-inner{
+    border-radius: 0;
+    height: 44px;
+    padding: 0;
+
+    .container{
+      margin: auto !important;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 2px;
+      height: 22px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      padding: 0;
+      width: auto;
+      text-align: center;
+    }
+
+    .brand{
+      color: #fff;
+      padding: 0 10px;
+    }
+
+  }
+
+  .nav-lev2{
+    background-color: $c1;
+  }
+
+
+  .nav-btn{
+    position: relative;
+
+    a{
+      color: #ffffff !important;
+      i{
+        margin-top: 3px;
+      }
+    }
+
+    height: 41px;
+
+    span{
+      position: absolute;
+      margin: 2px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.3);
+      top: 0;
+      left: 0;
+      right: 0;
+
+    }
+  }
+
+  .user{
+    margin-top: -2px;
+    margin-left: -20px;
+
+    font-size: 20px;
+    font-weight: 200;
+    i{
+      margin-top: 6px;
+    }
+
+  }
+
+  .nav-btn-1{
+    @include nav-hover-color($c1);
+  }
+
+  .nav-btn-2{
+    @include nav-hover-color($c2);
+  }
+
+  .nav-btn-3{
+    @include nav-hover-color($c3);
+  }
+
+  .nav-btn-4{
+    @include nav-hover-color($c4);
+  }
+
+  .nav-active{
+    span{
+      top: 34px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+  }
+
+  .sub-menu{
+    padding-left: 20px;
+
+    li:first-child{
+      padding-right: 0;
+    }
+
+  }
+
+  .breadcrumb{
+
+    padding:0 20px;
+
+    display: inline-block;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    @include border-radius(25px);
+
+    z-index: 9999;
+    position: relative;
+
+    a{
+      font-size: 16px;
+
+      &:hover{
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      color: #b7b7b7;
+      text-shadow: rgba(0, 0, 0, 0.25) 0px -1px 0px;
+    }
+
+    li{
+      padding: 10px 0;
+    }
+  }
+
+  a{
+    padding: 0;
+  }
+
+  li{
+    padding: 10px 20px;
+
+  }
+}
+
+.edge-1{
+  @include edge-hover-color($c1);
+}
+
+.edge-2{
+  @include edge-hover-color($c2);
+}
+
+.edge-3{
+  @include edge-hover-color($c3);
+}
+
+.edge-4{
+  @include edge-hover-color($c4);
+}
+
+.edge-over{
+  opacity: 1;
+}
+
+.edge-active{
+  opacity: 1;
+}
+
+
+
+

@@ -1,0 +1,50 @@
+#sales{
+  #products{
+    #product {
+
+      .item3d{
+        width: 980px;
+        height: 650px;
+      }
+
+
+      .element {
+        position: absolute;
+        width: 980px;
+        height: 650px;
+        cursor: default;
+      }
+
+      padding-bottom: 20px;
+
+      article {
+        padding-top: 0;
+        padding-left: 20px;
+        padding-bottom: 20px;
+      }
+
+      .img-wrap{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+
+      img {
+        width: 420px !important;
+        height: 560px !important;
+      }
+
+      hr {
+        border-top: 1px solid rgba(238, 238, 238, 0.32);
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+      }
+
+      .btn {
+        margin-top: 20px;
+      }
+    }
+
+  }
+}
+
+

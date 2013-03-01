@@ -1,0 +1,39 @@
+#sales{
+  #products{
+
+    .item3d{
+      width: 300px;
+      height: 400px;
+    }
+
+    .element {
+      position: absolute;
+      width: 300px;
+      height: 400px;
+      cursor: default;
+    }
+
+    section{
+
+      img{
+        width: 300px;
+        height: 400px;
+      }
+
+      .rows{
+        img{
+          width: 91px !important;
+          height: 121px !important;
+
+        }
+      }
+    }
+
+
+
+
+  }
+
+}
+
+

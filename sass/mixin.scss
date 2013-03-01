@@ -1,0 +1,14 @@
+@mixin nav-hover-color($color){
+  background-color: $color;
+  &:hover{
+    span{
+      height: auto;
+      bottom: 0;
+    }
+  }
+}
+
+@mixin edge-hover-color($color){
+  background-color: $color;
+  opacity: 0;
+}
