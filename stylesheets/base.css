@@ -83,9 +83,24 @@ h1 {
 .element {
   position: absolute;
   cursor: default;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -ms-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  -ms-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
+  transition-duration: 1.5s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
-/* line 91, ../sass/base.scss */
+/* line 94, ../sass/base.scss */
 .sold-out {
   color: #ff0000;
   font-size: 52px;

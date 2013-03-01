@@ -86,6 +86,9 @@ h1{
 .element {
   position: absolute;
   cursor: default;
+  @include transition-property(all);
+  @include transition-duration(1.5s);
+  @include transition-timing-function(ease-out);
 }
 
 .sold-out{

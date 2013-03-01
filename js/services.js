@@ -99,8 +99,8 @@ services.factory('Scene3DApi', function ($http, $log, $rootScope, $routeParams, 
             objTarget.position.y = ( row * 430 ) - 200;
             objTarget.position.z = z;
 
-            row = col === 2 ? ++row : row;
-            col = col === 2 ? 0 : ++col;
+            row = (col === 2) ? ++row : row;
+            col = (col === 2) ? 0 : ++col;
             //console.log(row);
 
             layout[objId] = {obj:obj, objTarget:objTarget};
@@ -199,7 +199,6 @@ services.factory('Scene3DApi', function ($http, $log, $rootScope, $routeParams, 
         getProductLayout:getProductLayout,
         getFlyOutLayout:getFlyOutLayout,
         setDepthPosition:setDepthPosition
-//        getCameraPosition:getCameraPosition
     };
 
     return Scene3DApi;

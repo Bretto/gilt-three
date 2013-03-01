@@ -1,7 +1,7 @@
 <div id="sales">
     <ul>
         <li ng-repeat="s in data.sales | limitTo:9" class="item3d" render-3d-complete="{{layout}}">
-            <div ng-include="'partial/sale-thumb.html'" class="thumb-wrap element"></div>
+            <div ng-include="'partial/sale-thumb.html'" class="thumb-wrap element" ng-class="{isFar:isFar()}"></div>
         </li>
     </ul>
     <div ui-view></div>

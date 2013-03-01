@@ -41,14 +41,14 @@ directives.directive('scene3d', function ($log, $timeout, $rootScope) {
     function onWindowResize() {
 
         if(camera){
-            camera.aspect = 980 / 655;
-//            camera.aspect = viewerWrap.width() / viewerWrap.height();
+            //camera.aspect = 980 / 655;
+            camera.aspect = viewerWrap.width() / viewerWrap.height();
             camera.updateProjectionMatrix();
         }
 
         if(renderer && scene && camera){
-            renderer.setSize( 980, 655 );
-//            renderer.setSize( viewerWrap.width(), viewerWrap.height() );
+//            renderer.setSize( 980, 655 );
+            renderer.setSize( viewerWrap.width(), viewerWrap.height() );
             renderer.render(scene,camera)
         }
     }
@@ -158,7 +158,7 @@ directives.directive('scene3d', function ($log, $timeout, $rootScope) {
             camera = makeCamera(attr);
 
             viewerWrap = $('#viewer-wrap');
-            //window.addEventListener( 'resize', onWindowResize, false );
+            window.addEventListener( 'resize', onWindowResize, false );
 
             rendererEle = elem[0];
             cameraEle = elem.find('[camera-3d]')[0];

@@ -1,9 +1,11 @@
 <div id="products">
     <h4 class="sold-out" ng-show="isSoldOut">SOLD OUT</h4>
-    <ul>
-        <li ng-repeat="product in products | limitTo:6" class="item3d" render-3d-complete>
-            <div ng-include="'partial/product-thumb.html'" class="element"></div>
-        </li>
+    <ul class="products-wrap">
+        <!--<div class="test">-->
+            <li ng-repeat="product in products | limitTo:6" class="item3d" render-3d-complete>
+                <div ng-include="'partial/product-thumb.html'" class="element" ng-class="{isFar:isFar()}"></div>
+            </li>
+        <!--</div>-->
     </ul>
     <div ui-view></div>
 </div>

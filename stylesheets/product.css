@@ -13,30 +13,31 @@
   width: 980px;
   height: 650px;
   cursor: default;
+  opacity: 1;
 }
-/* line 20, ../sass/product.scss */
+/* line 21, ../sass/product.scss */
 #sales #products #product article {
   padding-top: 0;
   padding-left: 20px;
   padding-bottom: 20px;
 }
-/* line 26, ../sass/product.scss */
+/* line 27, ../sass/product.scss */
 #sales #products #product .img-wrap {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
-/* line 32, ../sass/product.scss */
+/* line 33, ../sass/product.scss */
 #sales #products #product img {
   width: 420px !important;
   height: 560px !important;
 }
-/* line 37, ../sass/product.scss */
+/* line 38, ../sass/product.scss */
 #sales #products #product hr {
   border-top: 1px solid rgba(238, 238, 238, 0.32);
   border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
-/* line 42, ../sass/product.scss */
+/* line 43, ../sass/product.scss */
 #sales #products #product .btn {
   margin-top: 20px;
 }

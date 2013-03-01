@@ -72,12 +72,15 @@ controllers.controller('SalesCtrl', function ($scope, MainModel, $log, promiseDa
 
     $scope.$on('$stateChangeSuccess', function(e, to, from){
         $log.info('$stateChangeSuccess', 'PRODUCT');
-
         if(MainModel.activeView === 'SALE'){
+
             $scope.transform(Scene3DApi.setDepthPosition(OBJ3D.SALE, 0), 1500);
         }
-
     });
+
+    $scope.isFar = function(){
+        return (MainModel.activeView === 'SALE')? false:true;
+    }
 
     MainModel.breadcrumbs(MainModel.root + ' sales');
 
@@ -87,6 +90,7 @@ controllers.controller('SalesCtrl', function ($scope, MainModel, $log, promiseDa
 
     $scope.$on('Sale:onExit', function(){
         $log.info('Sale:onExit');
+        OBJ3D.SALE = [];
     });
 
     $scope.$on('$routeChangeStart', function(){
@@ -140,6 +144,10 @@ controllers.controller('ProductsCtrl', function ($scope, $log, $routeParams, GIL
             $scope.transform(Scene3DApi.setDepthPosition(OBJ3D.PRODUCT, 0), 1500);
         }
     });
+
+    $scope.isFar = function(){
+        return (MainModel.activeView === 'PRODUCT')? false:true;
+    }
 
     $scope.$on('Product:onEnter', function(){
         $log.info('Product:onEnter');
