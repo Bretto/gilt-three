@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1abb8998-efb5-46d7-9953-f13f86069ccc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/10ffc27c538eff6c78707073f1a8bc9f859e6188/base.scssc" afterPath="$PROJECT_DIR$/.sass-cache/10ffc27c538eff6c78707073f1a8bc9f859e6188/base.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/10ffc27c538eff6c78707073f1a8bc9f859e6188/nav.scssc" afterPath="$PROJECT_DIR$/.sass-cache/10ffc27c538eff6c78707073f1a8bc9f859e6188/nav.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/10ffc27c538eff6c78707073f1a8bc9f859e6188/screen.scssc" afterPath="$PROJECT_DIR$/.sass-cache/10ffc27c538eff6c78707073f1a8bc9f859e6188/screen.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/directives.js" afterPath="$PROJECT_DIR$/js/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/base.scss" afterPath="$PROJECT_DIR$/sass/base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/nav.scss" afterPath="$PROJECT_DIR$/sass/nav.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/screen.scss" afterPath="$PROJECT_DIR$/sass/screen.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/base.css" afterPath="$PROJECT_DIR$/stylesheets/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/nav.css" afterPath="$PROJECT_DIR$/stylesheets/nav.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/screen.css" afterPath="$PROJECT_DIR$/stylesheets/screen.css" />
     </list>
     <ignored path="leap-three-navigation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +22,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="directives.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="5" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0">
+            <state line="139" column="0" selection-start="3823" selection-end="3823" vertical-scroll-proportion="0.45647058">
               <folding />
             </state>
           </provider>
@@ -95,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="1" selection-start="226" selection-end="226" vertical-scroll-proportion="0.23972602">
+            <state line="9" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,10 +137,10 @@
         <option value="$PROJECT_DIR$/partial/products.html" />
         <option value="$PROJECT_DIR$/js/controllers.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/directives.js" />
         <option value="$PROJECT_DIR$/sass/screen.scss" />
         <option value="$PROJECT_DIR$/sass/nav.scss" />
         <option value="$PROJECT_DIR$/sass/base.scss" />
+        <option value="$PROJECT_DIR$/js/directives.js" />
       </list>
     </option>
   </component>
@@ -442,23 +432,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="5" selection-start="3371" selection-end="3371" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="151" column="49" selection-start="3647" selection-end="3647" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="0" selection-start="6883" selection-end="6883" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -479,7 +455,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="1" selection-start="226" selection-end="226" vertical-scroll-proportion="0.23972602">
+        <state line="9" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="224" column="0" selection-start="6883" selection-end="6883" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="0" selection-start="3823" selection-end="3823" vertical-scroll-proportion="0.45647058">
           <folding />
         </state>
       </provider>

@@ -36,6 +36,8 @@ directives.directive('scene3d', function ($log, $timeout, $rootScope) {
 
     var camera, scene, renderer, controls, projector;
     var cameraEle, rendererEle, viewerWrap;
+    var mouseX = 0, mouseY = 0;
+    var friction, windowHalfX, windowHalfY;
     var requestAnimationFrameId = null;
 
     function onWindowResize() {
@@ -51,6 +53,9 @@ directives.directive('scene3d', function ($log, $timeout, $rootScope) {
             renderer.setSize( viewerWrap.width(), viewerWrap.height() );
             renderer.render(scene,camera)
         }
+
+       windowHalfX = window.innerWidth / 2;
+       windowHalfY = window.innerHeight / 2;
     }
 
     function setInitPosition(targets) {
@@ -120,20 +125,34 @@ directives.directive('scene3d', function ($log, $timeout, $rootScope) {
 
         if(renderer && scene && camera)
         {
+            friction = .02;
+
+            camera.position.x -= ( mouseX/3 + camera.position.x ) * friction, 10;
+            camera.position.y -= ( - mouseY/3 + camera.position.y ) * friction, 10;
+
+            camera.lookAt( scene.position );
+
             renderer.render(scene, camera);
         }
+    }
+
+    function onDocumentMouseMove(event) {
+
+        mouseX = ( event.clientX - windowHalfX );
+        mouseY = ( event.clientY - windowHalfY );
+
     }
 
     function makeCamera(attr){
         var camera = new THREE.PerspectiveCamera(attr.fov, attr.width / attr.height, attr.near, attr.far);
 
-        camera.position.x = attr.posX;
-        camera.position.y = attr.posY;
-        camera.position.z = attr.posZ;
+        camera.position.x = parseInt(attr.posX);
+        camera.position.y = parseInt(attr.posY);
+        camera.position.z = parseInt(attr.posZ);
 
-        camera.rotation.x = attr.rotX;
-        camera.rotation.y = attr.rotY;
-        camera.rotation.z = attr.rotZ;
+        camera.rotation.x = parseInt(attr.rotX);
+        camera.rotation.y = parseInt(attr.rotY);
+        camera.rotation.z = parseInt(attr.rotZ);
 
         return camera;
     }
@@ -166,14 +185,15 @@ directives.directive('scene3d', function ($log, $timeout, $rootScope) {
 
             viewerWrap = $('#viewer-wrap');
             window.addEventListener( 'resize', onWindowResize, false );
+            document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
             rendererEle = elem[0];
             cameraEle = elem.find('[camera-3d]')[0];
             projector = new THREE.Projector();
             renderer = makeRenderer(rendererEle, cameraEle, projector);
 
-            controls = makeControls(camera, rendererEle);
-            controls.addEventListener('change', render);
+//            controls = makeControls(camera, rendererEle);
+//            controls.addEventListener('change', render);
 
 
             //API
