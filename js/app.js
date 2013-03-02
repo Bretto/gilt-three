@@ -69,7 +69,9 @@ angular.module('GiltApp', ['GiltApp.filters', 'GiltApp.services', 'GiltApp.direc
                 onExit:function ($rootScope, $state) {
                     $rootScope.$broadcast('Item:onExit');
                 }
-            })
+            });
+            $urlRouterProvider.otherwise('/');
+
     })
     .run(
         function ($rootScope, $state, $stateParams) {
