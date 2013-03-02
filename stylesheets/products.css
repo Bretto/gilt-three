@@ -10,13 +10,8 @@
   height: 400px;
   cursor: default;
 }
-/* line 22, ../sass/products.scss */
-#sales #products section img {
+/* line 21, ../sass/products.scss */
+#sales #products img {
   width: 300px;
   height: 400px;
-}
-/* line 28, ../sass/products.scss */
-#sales #products section .rows img {
-  width: 91px !important;
-  height: 121px !important;
 }

@@ -148,15 +148,15 @@ h1 {
   cursor: default;
 }
 /* line 19, ../sass/sales.scss */
-#sales section .thumbnail img {
+#sales .thumbnail img {
   width: 300px;
   height: 184px;
 }
-/* line 27, ../sass/sales.scss */
+/* line 30, ../sass/sales.scss */
 #sales #sales-list {
   padding: 0;
 }
-/* line 32, ../sass/sales.scss */
+/* line 35, ../sass/sales.scss */
 #sales .sale-popup {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -180,20 +180,20 @@ h1 {
   position: absolute;
   width: 370px;
 }
-/* line 46, ../sass/sales.scss */
+/* line 49, ../sass/sales.scss */
 #sales .sale-popup header {
   padding: 20px;
   background-color: #d96666;
 }
-/* line 50, ../sass/sales.scss */
+/* line 53, ../sass/sales.scss */
 #sales .sale-popup header span {
   color: #949494;
 }
-/* line 54, ../sass/sales.scss */
+/* line 57, ../sass/sales.scss */
 #sales .sale-popup header .timeago {
   color: #d2d2d2;
 }
-/* line 60, ../sass/sales.scss */
+/* line 63, ../sass/sales.scss */
 #sales .sale-popup section {
   padding: 20px;
   background-color: #ffffff;
@@ -212,15 +212,10 @@ h1 {
   height: 400px;
   cursor: default;
 }
-/* line 22, ../sass/products.scss */
-#sales #products section img {
+/* line 21, ../sass/products.scss */
+#sales #products img {
   width: 300px;
   height: 400px;
-}
-/* line 28, ../sass/products.scss */
-#sales #products section .rows img {
-  width: 91px !important;
-  height: 121px !important;
 }
 
 /* line 3, ../sass/product.scss */

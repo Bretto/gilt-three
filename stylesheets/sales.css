@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'transition-property'.
-        on line 34 of /Users/separ8/Sites/gilt-three/sass/sales.scss, in `transition-property'
-        from line 34 of /Users/separ8/Sites/gilt-three/sass/sales.scss
+        on line 37 of /Users/separ8/Sites/gilt-three/sass/sales.scss, in `transition-property'
+        from line 37 of /Users/separ8/Sites/gilt-three/sass/sales.scss
 
 Backtrace:
-/Users/separ8/Sites/gilt-three/sass/sales.scss:34:in `transition-property'
-/Users/separ8/Sites/gilt-three/sass/sales.scss:34
+/Users/separ8/Sites/gilt-three/sass/sales.scss:37:in `transition-property'
+/Users/separ8/Sites/gilt-three/sass/sales.scss:37
 /Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/perform.rb:249:in `visit_mixin'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.1/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
@@ -90,4 +90,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'transition-property'.\A         on line 34 of /Users/separ8/Sites/gilt-three/sass/sales.scss, in `transition-property'\A         from line 34 of /Users/separ8/Sites/gilt-three/sass/sales.scss"; }
+  content: "Syntax error: Undefined mixin 'transition-property'.\A         on line 37 of /Users/separ8/Sites/gilt-three/sass/sales.scss, in `transition-property'\A         from line 37 of /Users/separ8/Sites/gilt-three/sass/sales.scss"; }
